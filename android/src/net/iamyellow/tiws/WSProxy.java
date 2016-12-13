@@ -224,4 +224,12 @@ public class WSProxy extends KrollProxy implements OnLifecycleEvent {
 			client.send(message);
 		}
 	}
+	
+	@Kroll.method
+	public void sendBytes(TiBlob blob) {
+		if (client != null && connected) {
+			client.send(blob.getBytes());
+		}
+	}
+	
 }

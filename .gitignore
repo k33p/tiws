@@ -3,3 +3,5 @@
 *.xcworkspace
 *~
 *.swp
+.idea
+*.iml
